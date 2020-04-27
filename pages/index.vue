@@ -23,7 +23,7 @@
         >
           GitHub
         </a>
-        <nuxt-link to="/home">首页</nuxt-link>
+        <nuxt-link to="/home"> 首页 </nuxt-link>
       </div>
     </div>
   </div>

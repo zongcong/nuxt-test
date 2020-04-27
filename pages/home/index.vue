@@ -3,7 +3,7 @@
     <ul>
       <li v-for="item in obj" :key="item.id" style="padding: 10px 20px">
         <p>{{ item.title }}</p>
-        <p class="center" v-html="item.content_rendered" />
+        <p class="center" v-html="item.content_rendered"/>
       </li>
     </ul>
   </div>
@@ -24,7 +24,11 @@ export default {
     return {
       title: `Page 1 (${this.obj[0].title}-side)`,
       meta: [
-        { hid: 'description', name: 'description', content: 'Page 1 description' }
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Page 1 description'
+        }
       ]
     }
   }
@@ -43,6 +47,7 @@ export default {
     text-align: justify;
     text-indent: 2em;
   }
+
   .center ul li {
     margin: 5px 0;
     border-bottom: 1px solid #CCC;
