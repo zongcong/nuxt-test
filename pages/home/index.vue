@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="center">
     <ul>
       <li v-for="item in obj" :key="item.id" style="padding: 10px 20px">
         <p>{{ item.title }}</p>
-        <p v-html="item.content_rendered" />
+        <p v-html="item.content_rendered" class="center" />
       </li>
     </ul>
   </div>
@@ -31,6 +31,20 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+  .center img {
+    width: 100%;
+  }
 
+  .center ul {
+    list-style: none;
+    padding: 0;
+    line-height: 24px;
+    text-align: justify;
+    text-indent: 2em;
+  }
+  .center ul li {
+    margin: 5px 0;
+    border-bottom: 1px solid #CCC;
+  }
 </style>
