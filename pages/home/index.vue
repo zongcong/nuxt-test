@@ -3,7 +3,7 @@
     <ul>
       <li v-for="item in obj" :key="item.id" style="padding: 10px 20px">
         <p>{{ item.title }}</p>
-        <p v-html="item.content_rendered" class="center" />
+        <p class="center" v-html="item.content_rendered" />
       </li>
     </ul>
   </div>
